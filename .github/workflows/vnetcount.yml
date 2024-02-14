@@ -16,6 +16,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
+#inline code here
       - name: Azure vNet Count
         uses: azure/CLI@v1
         with:
