@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "hostPoolName": {
+            "type": "string",
+            "metadata": {
+                "description": "The name of the Host Pool to be created."
+            }
+        },
+        "location": {
+            "type": "string",
+            "metadata": {
+                "description": "The location where the resources will be created."
+            }
+        },
+        "description": {
+            "type": "string",
+            "metadata": {
+                "description": "The description of the Host Pool."
+            }
+        },
+        "friendlyName": {
+            "type": "string",
+            "metadata": {
+                "description": "The friendly name of the Host Pool."
+            }
+        },
+        "type": {
+            "type": "string",
+            "metadata": {
+                "description": "The type of the Host Pool. Possible values are: 'Pooled' or 'Personal'."
+            }
+        },
+        "loadBalancerType": {
+            "type": "string",
+            "metadata": {
+                "description": "The type of the load balancer. Possible values are: 'BreadthFirst' or 'DepthFirst'."
+            }
+        },
+        "maxSessionLimit": {
+            "type": "int",
+            "metadata": {
+                "description": "The maximum session limit."
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.DesktopVirtualization/hostPools",
+            "apiVersion": "2021-04-01-preview",
+            "name": "[parameters('hostPoolName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "description": "[parameters('description')]",
+                "friendlyName": "[parameters('friendlyName')]",
+                "hostPoolType": "[parameters('type')]",
+                "loadBalancerType": "[parameters('loadBalancerType')]",
+                "maxSessionLimit": "[parameters('maxSessionLimit')]"
+            }
+        }
+    ]
+}
