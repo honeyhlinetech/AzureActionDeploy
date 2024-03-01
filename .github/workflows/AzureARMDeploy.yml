@@ -22,6 +22,6 @@ jobs:
           inlineScript: |
             az deployment group create \
             --name StorageAccountDeployment \
-            --resource-group tablerg \
+            --resource-group hhrg \
             --template-file armtemplates/storageaccount.json \
             --parameters storageAccountType=Standard_GRS
