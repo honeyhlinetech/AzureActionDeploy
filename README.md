@@ -8,4 +8,4 @@ az ad sp create-for-rbac --name "hhgithubactionazure" --role contributor --scope
 Step 2> Copy and Paste the secrets in the secret area.
 Step 3> On VS Code git clone<your github repo link
 Step 4> Edit in VS Code, Commit > Sync back to GitHub Repo
-Step 5> Check the deploy status![image](https://github.com/honeyhlinetech/AzureActionDeploy/assets/12688547/19854fe2-19a6-4478-a58f-1ce618621abe)
+Step 5> Check the deploy status!
