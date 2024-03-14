@@ -10,7 +10,7 @@ az ad sp create-for-rbac --name "hhgithubactionazure" --role contributor --scope
 
 Step 2> Copy and Paste the secrets in the secret area.
 
-Step 3> On VS Code git clone <your github repo link>.
+Step 3> On VS Code git clone your github repo link.
 
 Step 4> Edit in VS Code, Commit > Sync back to GitHub Repo.
 
