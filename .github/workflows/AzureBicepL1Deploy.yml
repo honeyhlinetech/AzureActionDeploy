@@ -21,4 +21,4 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
-       az deployment sub create --name 'lab01' --template-file 'biceptemplates/labs/lab01//main.bicep' --verbose
+       az deployment sub create --name 'lab01' --template-file 'biceptemplates/labs/lab01/main.bicep' --verbose
