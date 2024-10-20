@@ -4,7 +4,7 @@ name: AzureBicepDeploy
 
 jobs:
 
-    deploy:
+    build-and-deploy:
       runs-on: ubuntu-latest
       steps:
 
@@ -19,6 +19,7 @@ jobs:
       - name: Deploy Bicep Template
         uses: azure/CLI@v1
         with:
+          azcliversion: 2.30.0
           inlineScript: |
         
             az deployment sub create \
