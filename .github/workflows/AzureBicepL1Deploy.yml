@@ -3,17 +3,15 @@ on: [push]
 name: AzureBicepDeploy
 
 jobs:
-
-   deploy:
-      runs-on: ubuntu-latest
-      steps:
-
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: Login to Azure
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Checkout source codel'' np,l?'
+      - name: Checkout source code
         uses: actions/checkout@v2
 
       - name: Deploy Bicep Template
