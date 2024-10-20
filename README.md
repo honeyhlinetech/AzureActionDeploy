@@ -13,6 +13,7 @@ Create a service principal
 az ad sp create-for-rbac --name "hhgithubactionazure" --role contributor --scopes /subscriptions/xxxxxxx232324cxxxxxxx/resourceGroups/honeyhlinegithubdeploy --sdk-auth
 
 Step 2> Copy and Paste the secrets in the secret area.
+![secret](https://github.com/user-attachments/assets/9bbf1a7a-27c8-4c43-a754-afa5d5b7b355)
 
 Step 3> On VS Code git clone your github repo link.
 
