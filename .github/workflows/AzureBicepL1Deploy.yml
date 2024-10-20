@@ -20,8 +20,9 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az deployment group create \
-            --name StorageAccountDeployment \
-            --resource-group mlz-demo \
-            --template-file armtemplates/storageaccount.json \
-            --parameters storageAccountType=Standard_GRS
+        
+            az deployment sub create \
+            --location 'eastus' \
+            --name 'BicepLab1DeploymentRG' \
+            --template-file 'biceptemplates/labs/lab01//main.bicep' \
+            --verbose
