@@ -40,7 +40,7 @@ az account set --subscription '<<your subscription name>>'
 - Deploy the [main.bicep](main.bicep) by modifying the `identifier` parameter to something that is unique to your deployment (i.e. a 5 letter string). Additionally you can also change the `location` parameter to a different Azure region of your choice.
 
 ```powershell
-az deployment sub create --location 'australiaeast' --name 'lab01' --template-file '<<path to the repo>>/labs/lab01/main.bicep' --verbose
+az deployment sub create --location 'eastus' --name 'lab01' --template-file '<<path to the repo>>/labs/lab01/main.bicep' --verbose
 ```
 
 ### Method (2) - `main.parameters.json` file
@@ -48,7 +48,7 @@ az deployment sub create --location 'australiaeast' --name 'lab01' --template-fi
 - Deploy the [main.parameters.json](main.parameters.json) by modifying the `identifier` parameter to something that is unique to your deployment (i.e. a 5 letter string). Additionally you can also change the `location` parameter to a different Azure region of your choice.
 
 ```powershell
-az deployment sub create --location 'australiaeast' --name 'lab01' --template-file '<<path to the repo>>/labs/lab01/main.bicep' --parameters '<<path to the repo>>/labs/lab01/main.parameters.json' --verbose
+az deployment sub create --location 'eastus' --name 'lab01' --template-file '<<path to the repo>>/labs/lab01/main.bicep' --parameters '<<path to the repo>>/labs/lab01/main.parameters.json' --verbose
 ```
 
 ---
