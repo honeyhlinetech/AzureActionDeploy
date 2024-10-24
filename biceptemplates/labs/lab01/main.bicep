@@ -34,7 +34,7 @@ module testDeployment 'br/public:avm/res/storage/storage-account:0.5.0' = {
   name: '${uniqueString(deployment().name, location)}-${identifier}'
   params: {
     location: location
-    name: '${identifier}saasdsg'
+    name: '${identifier}honeyhlinelab1saasdsg'
     privateEndpoints: [
       {
         service: 'blob'
@@ -47,7 +47,7 @@ module testDeployment 'br/public:avm/res/storage/storage-account:0.5.0' = {
     blobServices: {
       containers: [
         {
-          name: '${identifier}container'
+          name: '${identifier}honeyhlinelab1container'
           publicAccess: 'None'
         }
       ]
