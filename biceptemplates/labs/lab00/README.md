@@ -5,7 +5,7 @@ Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy
 ----
 Deploying Azure Bicep Templates using the Azure CLI
 Step 1. Create a Bicep template or grab the one from the Microsoft Opensource Repo
-main.bicep (lab00) is an example of a Bicep file that creates a virtual network with a single subnet.
+vnet.bicep (lab00) is an example of a Bicep file that creates a virtual network with a single subnet.
 
 Step 2. Sign in to your Azure Subscription
 
@@ -19,4 +19,4 @@ az group create --name <resource-group-name> --location <location>
 
 Step 4. Deploy the Azure Bicep Template
 
-az deployment group create --resource-group <resource-group-name> --template-file main.bicep
+az deployment group create --resource-group <resource-group-name> --template-file vnet.bicep
