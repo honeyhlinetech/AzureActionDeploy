@@ -9,9 +9,9 @@ Step 1>On Azure Portal > Create a resource group > Create a service principal > 
 By running 
 
 Create a service principal
-
+```shell
 az ad sp create-for-rbac --name "xxyourapp" --role contributor --scopes /subscriptions/xxxxxxx232324cxxxxxxx/resourceGroups/xx-rg --sdk-auth
-
+```
 Step 2> Copy and Paste the secrets in the secret area.
 ![secret](https://github.com/user-attachments/assets/9bbf1a7a-27c8-4c43-a754-afa5d5b7b355)
 
