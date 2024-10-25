@@ -11,7 +11,7 @@ on:
     branches:
       - main
       - policy-refresh
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 ###############
 # Set the Job #
@@ -23,12 +23,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: Lint eslzArm directory
-        uses: docker://github/super-linter:v4.9.5
+        uses: docker://github/super-linter:slim-v4
         env:
           # Only lint changed files
           VALIDATE_ALL_CODEBASE: false
