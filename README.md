@@ -12,6 +12,8 @@ Create a service principal
 ```shell
 az ad sp create-for-rbac --name "xxyourapp" --role contributor --scopes /subscriptions/xxxxxxx232324cxxxxxxx/resourceGroups/xx-rg --sdk-auth
 ```
+Note: Option '--sdk-auth' has been deprecated and will be removed in a future release. In a future release, this command will NOT create a 'Contributor' role assignment by default. 
+
 Step 2> Copy and Paste the secrets in the secret area.
 ![secret](https://github.com/user-attachments/assets/9bbf1a7a-27c8-4c43-a754-afa5d5b7b355)
 
