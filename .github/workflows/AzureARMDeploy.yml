@@ -7,10 +7,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Login to Azure gov cloud
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZUREGOVCREDI }}
-          environment: 'AzureUSGovernment'
+  uses: azure/login@v1
+  with:
+    creds: ${{ secrets.AZUREGOVCREDI }}
+    environment: 'AzureUSGovernment'
     
       - name: Checkout source codel'
         uses: actions/checkout@v2
