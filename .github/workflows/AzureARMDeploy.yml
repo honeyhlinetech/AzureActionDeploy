@@ -7,18 +7,17 @@ jobs:
     deploy:
       runs-on: ubuntu-latest
       steps:
-
       - name: Login to Azure gov cloud
-        uses: azure/login@v2
+        uses: azure/login@v1
         with:
           creds: ${{ secrets.AZUREGOVCREDI }}
           environment: 'AzureUSGovernment'
     
       - name: Checkout source codel'' np,l?'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       - name: Deploy ARM Template
-        uses: azure/CLI@v2
+        uses: azure/CLI@v1
         with:
           inlineScript: |
             az deployment group create \
