@@ -14,8 +14,9 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
-      - name: Deploy Bicep Template
+    
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az deployment sub create --location 'eastus' --name 'lab01' --template-file 'biceptemplates/labs/lab01/main.bicep' --parameters 'biceptemplates/labs/lab01/main.parameters.json' --verbose
+            az group create --location usgovvirginia --resource-group testhhrg
+               
