@@ -8,7 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
 
-      - name: Login to Azure
+      - name: Login to Azure gov cloud
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZUREGOVCREDI }}
