@@ -13,8 +13,8 @@ jobs:
           creds: ${{ secrets.AZUREGOVCREDI }}
           environment: 'AzureUSGovernment'
     
-      - name: Checkout source codel'' np,l?'
-        uses: actions/checkout@v1
+      - name: Checkout source codel'
+        uses: actions/checkout@v2
 
       - name: Deploy ARM Template
         uses: azure/CLI@v1
