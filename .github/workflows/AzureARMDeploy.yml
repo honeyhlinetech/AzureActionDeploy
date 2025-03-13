@@ -4,7 +4,7 @@ name: AzureARMDeploy
 
 jobs:
 
-    deploy:
+    build-and-deploy:
       runs-on: ubuntu-latest
       steps:
       - name: Login to Azure gov cloud
