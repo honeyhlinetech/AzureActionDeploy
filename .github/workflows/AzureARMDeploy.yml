@@ -13,7 +13,7 @@ jobs:
         with:
           creds: ${{ secrets.AZUREGOVCREDI }}
           environment: 'AzureUSGovernment'
-        enable-AzPSSession: true
+     
         
       - name: Checkout source codel'' np,l?'
         uses: actions/checkout@v2
