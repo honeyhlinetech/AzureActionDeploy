@@ -20,4 +20,4 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-       az group create --location usgovvirginia --resource-group testrg
+       az group create --location usgovvirginia --resource-group testrg3
