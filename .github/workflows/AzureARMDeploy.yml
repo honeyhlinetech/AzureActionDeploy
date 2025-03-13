@@ -3,7 +3,6 @@ on: [push]
 name: AzureARMDeploy
 
 jobs:
-
       deploy:
       runs-on: ubuntu-latest
       steps:
