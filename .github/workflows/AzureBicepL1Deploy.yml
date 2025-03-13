@@ -14,8 +14,6 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
-    
-        uses: azure/CLI@v1
         with:
           inlineScript: |
             az group create --location usgovvirginia --resource-group testhhrg
