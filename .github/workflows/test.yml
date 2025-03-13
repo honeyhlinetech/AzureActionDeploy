@@ -1,0 +1,17 @@
+# File: .github/workflows/workflow.yml
+
+on: [push]
+
+name: Login to Azure US Government cloud
+
+jobs:
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZUREGOVCREDI }}
+        environment: 'AzureUSGovernment'
+        enable-AzPSSession: true
