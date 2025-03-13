@@ -11,7 +11,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZUREGOVCREDI }}
 
       - name: Checkout source codel'' np,l?'
         uses: actions/checkout@v2
@@ -22,6 +22,6 @@ jobs:
           inlineScript: |
             az deployment group create \
             --name StorageAccountDeployment \
-            --resource-group mlz-demo \
+            --resource-group govrg \
             --template-file armtemplates/storageaccount.json \
             --parameters storageAccountType=Standard_GRS
