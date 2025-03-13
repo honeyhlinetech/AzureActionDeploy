@@ -20,8 +20,4 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az deployment group create \
-            --name StorageAccountDeployment \
-            --resource-group govrg \
-            --template-file armtemplates/storageaccount.json \
-            --parameters storageAccountType=Standard_GRS
+       az group create --location usgovvirginia --resource-group testrg
